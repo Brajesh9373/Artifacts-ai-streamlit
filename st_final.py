@@ -124,7 +124,7 @@ if st.button("Generate"):
         st.info("⏳ Thinking... Please wait.")
         try:
             response = requests.post(
-                "http://localhost:5000/generate-react",
+                "https://artifacts-ai-backend.onrender.com/generate-react",
                 json={"userInput": user_input},
                 headers={"Content-Type": "application/json"},
             )
